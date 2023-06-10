@@ -1,0 +1,528 @@
+/*gatito*/
+@font-face {
+    font-family: fuenteMapache;
+    src: url("../assets/font/rainy_stars/RainyStars_PERSONAL_USE_ONLY.otf");
+} 
+body{
+    background-color: violet;
+}
+a{
+    color: rgb(0, 0, 0);
+}
+a:visited{
+    color: rgb(0, 0, 0);
+}
+header{
+    background-color: purple;
+    max-width: 100%;
+    min-height: 80px;
+    border-radius: 15px;
+    box-shadow: 1px 12px 12px -2px rgba(0,0,0,0.45);
+    -webkit-box-shadow: 1px 12px 12px -2px rgba(0,0,0,0.45);
+    -moz-box-shadow: 1px 12px 12px -2px rgba(0,0,0,0.45);
+}
+h1{
+    font-family: fuenteMapache;
+    font-weight: 100;
+    font-size: 50px;
+    color: rgb(222, 219, 255);
+}
+#nav{
+    margin: auto;
+    height: 130px;
+    width: 800px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+#titulo{
+    font-size: larger;
+}
+
+#logo{
+    height: 100px;
+    width: 100px;
+    margin-right: 100px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+button{
+    height: 30px;
+    width: 100px;
+    border: 0;
+    background-color: chartreuse;
+    border-radius: 30px;
+}
+button:hover{
+    background-color: rgb(53, 228, 0);
+}
+button:active{
+    background-color: rgb(25, 134, 22);
+}
+.contenedor-btn{
+    position: relative;
+    height: 30px;
+    width: 300px;
+    background-color: rgb(48, 37, 85);
+    top: 30px;
+    left: 30px;
+    padding: 15px;
+    border-radius: 15px ;
+}
+ 
+.contenedor{
+    height: 100%;
+    max-width: 100%;
+    background-color: rgb(255, 177, 229);
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, 622px) ;
+    /* grid-template-areas: 
+    "item1 item2"
+    "item3 item4"
+    "item5 item6"; */
+    gap: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 30px;
+}
+
+.item{
+    position: relative;
+    height: 300px;
+    width: 622px;
+    margin: auto;
+    background-color: rgb(223, 66, 255);
+    margin: auto;
+    border-color: rgb(122, 11, 167);
+    border-style: double;
+    border-radius: 10px;
+}
+
+/*A N I M A C I Ó N -- 1 /////////////////////////////////////////////////////////////////////////////////////////*/
+
+#basurero{
+    position: absolute;
+    top: 10px;
+    left: 450px;
+}
+#anim1{
+    position: absolute;
+    top: 130px;
+    left: 50px;
+    animation: anim1;
+    animation-duration: 1.5s;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards ;
+    animation-iteration-count: infinite;
+}
+.b1{
+    display: flex;
+    justify-content: space-around; 
+    display: inline;
+    color: aliceblue;
+    text-decoration: underline;
+}
+@keyframes anim1{
+    0%{
+        left:50px;
+        top: 130px;
+    }
+    10%{
+        left: 300px;
+        top: 130px;
+    }
+    20%{
+        top: 40px;
+        left: 300px;
+    }
+    60%{    
+        top: 40px;
+        left: 300px; 
+        transform: rotate(-40deg);
+    }
+    70%{
+        scale: 1.4;
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/*A N I M A C I Ó N -- 2 /////////////////////////////////////////////////////////////////////////////////////////*/
+
+#sil1{
+    position: absolute;
+    top: 120px;
+    left: 450px;
+
+    animation: anim2;
+    animation-duration: 5s;
+    animation-delay: 0.1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+#sil2{
+    position: absolute;
+    top: 120px;
+    left: 80px;
+    animation: anim2sil2;
+    animation-duration: 5s;
+    animation-delay: 0.1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+#sil3{
+    position: absolute;
+    top: 120px;
+    left: 80px;
+    animation: anim2sil3;
+    animation-duration: 5s;
+    animation-delay: 0.1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+#gloton{
+    position: absolute;
+    top: 120px;
+    left: 80px;
+    animation: gloton;
+    animation-duration: 5s;
+    animation-delay: 0.1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+@keyframes anim2{
+    0%{
+        top: 120px;
+        left: 450px;
+    }
+    4% { transform: rotate( 8deg); }
+    8%{ transform: rotate(-8deg); }
+    12%{ transform: rotate( 8deg); }
+    16%{ transform: rotate(-8deg); }
+    20%{
+        top: 120px;
+        left: 80px;
+        transform: rotate( 0deg);
+        scale: 1;
+    }
+    21% { scale:0; }
+    100%{
+        top: 120px;
+        left: 80px;
+        scale: 0;
+    }
+}
+@keyframes anim2sil2{
+    0%  { scale: 0; }
+    20% { scale: 0; }
+    21% { scale: 1; }
+    30% { transform: rotate(  0deg); }
+    45% { transform: rotate(-20deg); }
+    60% { transform: rotate( 20deg); }
+    70% { 
+        transform: rotate( 0deg); 
+        scale: 1; 
+    }
+    71% { scale: 0; }
+    100%{ scale: 0; }
+}
+@keyframes anim2sil3{
+    0%  { scale: 0; }
+    70% { scale: 0; }
+    71% { 
+        scale: 1; 
+        transform: rotate( 0deg); 
+    }
+    74% { transform: rotate( 10deg); }
+    78% { transform: rotate(-10deg); }
+    82% { transform: rotate( 10deg); }
+    85% { 
+        scale: 1;
+        transform: rotate( 0deg); 
+    }
+    86% { scale: 0; }
+    100%{ scale: 0; }
+}
+@keyframes gloton{
+    0%  { scale: 0; }
+    85% { scale: 0; }
+    86% { scale: 1; }
+    100%{ scale: 1; }
+}
+
+/*A N I M A C I Ó N -- 3 /////////////////////////////////////////////////////////////////////////////////////////*/
+
+#wildRakoon{
+    position: absolute;
+    top: 120px;
+    left: 30px;
+    animation: wild;
+    animation-duration: 5s;
+    animation-delay: 0.1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+#interrogacion{
+    position: absolute;
+    top: 120px;
+    left: 200px;
+    animation: what;
+    animation-duration: 5s;
+    animation-delay: 0.1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+#LOL{
+    position: absolute;
+    top: 120px;
+    left: 350px;
+    animation: LOL;
+    animation-duration: 5s;
+    animation-delay: 0.1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+#gordoLOL{
+    position: absolute;
+    top: 120px;
+    left: 230px;   
+    animation: gordoLOL;
+    animation-duration: 5s;
+    animation-delay: 0.1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+@keyframes wild{
+    0% { scale: 0; transform: rotate( 0deg); }
+    20%{ scale: 1; transform: rotate( -720deg); }
+    60%{ 
+        top: 120px;
+        left: 30px; 
+        transform: rotate( -720deg);
+        scale: 1;
+    }
+    80%{
+        top: 120px;
+        left: 200px; 
+        scale: 0.5;
+    }
+    90%  { scale: 0; }
+    100% { scale: 0; }
+}
+@keyframes LOL{
+    0%  { scale: 0; }
+    20% { scale: 0; transform: rotate( 0deg);   }
+    40% { scale: 1; transform: rotate( 720deg); }
+    60%{ 
+        top: 120px;
+        left: 350px;
+        transform: rotate( 720deg);
+        scale: 1;
+    }
+    80%{
+        top: 120px;
+        left: 200px; 
+        scale: 0.5;
+    }
+    90%  { scale: 0; }
+    100% { scale: 0; }
+}
+@keyframes what{
+    0%  { scale: 0; }
+    40% { scale: 0; transform: rotate( 0deg);   }
+    60% { 
+        scale: 1; 
+        transform: rotate( 750deg); 
+        top: 120px;
+        left: 200px; 
+    }   
+    80% { 
+        scale: 0; 
+        top: 170px;
+        left: 290px; 
+    }
+    100%{ scale: 0; }
+}
+@keyframes gordoLOL{
+    0%  { scale: 0; transform: rotate( 0deg); }
+    79% { scale: 0; transform: rotate( 0deg); }
+    80% { scale: 1; }
+    90% { scale: 1; transform: rotate( 370deg); }
+    100%{ scale: 1; transform: rotate( 360deg); }
+}
+
+/*A N I M A C I Ó N -- 4 /////////////////////////////////////////////////////////////////////////////////////////*/
+
+#mapanillo{
+    position: absolute;
+    top: 120px;
+    left: 50px;
+    animation: anim4;
+    animation-duration: 2.5s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+#cheems{
+    position: absolute;
+    top: 120px;
+    left: 350px;
+    animation: anim4;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+@keyframes anim4{
+    0%  { transform: rotate(-10deg); }
+    10% { transform: rotate( 10deg); }
+    20% { transform: rotate(-10deg); }
+    30% { transform: rotate( 10deg); }
+    40% { transform: rotate(-10deg); }
+    50% { transform: rotate( 10deg); }
+    60% { transform: rotate(-10deg); }
+    70% { transform: rotate( 10deg); }
+    80% { transform: rotate(-10deg); }
+    90% { transform: rotate( 10deg); }
+    100%{ transform: rotate(-10deg); }
+}
+
+/*A N I M A C I Ó N -- 5 /////////////////////////////////////////////////////////////////////////////////////////*/
+
+#icono1{
+    position: absolute;
+    top: 120px;
+    left: 200px;
+    animation: icono1;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+#icono2{
+    position: absolute;
+    top: 120px;
+    left: 200px;
+    animation: icono2;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+#icono3{
+    position: absolute;
+    top: 120px;
+    left: 200px;
+    animation: icono3;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+#icono4{
+    position: absolute;
+    top: 120px;
+    left: 200px;
+    animation: icono4;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+@keyframes icono1{
+    0%   { scale: 0; transform: rotate(  0deg); }
+    25%  { scale: 1; transform: rotate(720deg); }
+    50%  { scale: 0; transform: rotate(  0deg); }
+    100% { scale: 0; transform: rotate(  0deg); }
+}
+@keyframes icono2{
+    0%   { scale: 0; transform: rotate(   0deg); }
+    25%  { scale: 0; transform: rotate(   0deg); }
+    50%  { scale: 1; transform: rotate(-720deg); }
+    75%  { scale: 0; transform: rotate(   0deg); }
+    100% { scale: 0; transform: rotate(   0deg); }
+}
+@keyframes icono3{
+    0%   { scale: 0; transform: rotate(  0deg); }
+    50%  { scale: 0; transform: rotate(  0deg); }
+    75%  { scale: 1; transform: rotate(720deg); }
+    100% { scale: 0; transform: rotate(  0deg); }
+}
+@keyframes icono4{
+    0%   { scale: 0; transform: rotate(   0deg); }
+    50%  { scale: 0; transform: rotate(   0deg); }
+    75%  { scale: 0; transform: rotate(   0deg); }
+    100% { scale: 1; transform: rotate(-720deg); }
+}
+
+/*A N I M A C I Ó N -- 6 /////////////////////////////////////////////////////////////////////////////////////////*/
+
+#SiluetaParada{
+    position: absolute;
+    top: 120px;
+    left: 350px;
+    animation: anim6;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+#happy{
+    position: absolute;
+    top: 120px;
+    left: 150px;
+    animation: anim6happy;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+#mapaFlor{
+
+    position: absolute;
+    top: 120px;
+    left: 150px;
+    animation: mapaFlor;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+@keyframes anim6{
+    0% { top: 120px; left: 350px; }
+    25%{ 
+        top: 120px; 
+        left: 150px; 
+        scale: 1;
+    }
+    26%{ scale: 0; }
+    100%{
+        top: 120px; 
+        left: 150px; 
+        scale: 0; 
+    }
+}
+@keyframes anim6happy{
+    0% { scale: 0; top: 120px; left: 150px; }
+    25%{ scale: 0; }
+    26%{ scale: 1; }
+    50%{ scale: 1; }
+    51%{ scale: 0; }
+    100%{
+        top: 120px; 
+        left: 150px; 
+        scale: 0; 
+    }
+}
+@keyframes mapaFlor {
+    0% { scale: 0; top: 120px; left: 150px; }
+    50%{ scale: 0; }
+    51%{ scale: 1; }
+    100%{
+        top: 120px; 
+        left: 150px; 
+        scale: 1; 
+    }
+}
